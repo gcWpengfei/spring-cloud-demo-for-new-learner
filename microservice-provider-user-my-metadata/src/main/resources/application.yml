@@ -1,0 +1,13 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: 我自定义的元数据       # 自定义的元数据，key/value都可以随便写。
